@@ -13,7 +13,7 @@ $students = [
     '9' =>  [ 'arash'   , 'alavi'      , 'grades' => ['reiazi' => 15, 'farsi' => 18, 'shimi' => 17]],
     '10'=>  [ 'yeganeh' , 'ghasemi'    , 'grades' => ['reiazi' => 20, 'farsi' => 12, 'shimi' => 13]]
 ];
-// var_dump($students['10']['grades']);
+
 foreach ($students as $student) {
     $average = array_sum($student['grades']) / count($student['grades']);
     echo "نام: " . " " . $student[0] . " " . $student[1] . " ". " | معدل: " . $average . " " . " | شماره دانش آموز: " . " " . $counter . "<br>";
