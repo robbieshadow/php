@@ -24,5 +24,5 @@ foreach ($students as $student) {
        echo "# ".$counter . " ".$student['1']." " . $student['2'] ." ". $average ."<br> ";
      $counter++;
 };
-};
+
 
