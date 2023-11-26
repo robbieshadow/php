@@ -32,6 +32,3 @@ if (validateCodeMeli($codeMeli)) {
     echo '<div style="width: 70%;font-size:30px ;margin:300px auto ; display:flex ; justify-content:center ; align-items:center; color:white ; background-color:red">کد ملی نا معتبر است </div>';
 }
 include('footer.php');
-
-//
-echo 'hello';
