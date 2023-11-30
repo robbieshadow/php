@@ -17,8 +17,7 @@ function mySort($array) {
 
 $sortedDesc = myRsort($numbers);
 print_r($sortedDesc);
-
+echo "<br>"
 $sortedAsc = mySort($numbers);
 print_r($sortedAsc);
 
-print_r($numbers);

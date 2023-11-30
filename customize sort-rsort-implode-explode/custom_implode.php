@@ -1,12 +1,12 @@
 <?php
-function myImplode($glue, $array) 
-{
+function myImplode($glue, $array) {
     $result = '';
+    $lastElement = end($array);;
     foreach ($array as $index => $value) {
-    $result .= $value;
-    if ($index !== count($array) - 1) {
-        $result .= $glue;
-    }
+        $result = $result . $value;
+        if ($value !== $lastElement) {
+            $result = $result . $glue;
+        }
     }
     return $result;
 }
