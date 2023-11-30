@@ -1,12 +1,12 @@
 <?php
 
-function myExplode($delimiter, $string) 
+function myExplode($jodakonandeh, $string) 
 {
     $result = [];
-    $token = strtok($string, $delimiter);
+    $token = strtok($string, $jodakonandeh) ;
     while ($token !== false) {
     $result[] = $token;
-    $token = strtok($delimiter);
+    $token = strtok($jodakonandeh);
     }
     return $result;
 }
@@ -14,6 +14,6 @@ function myExplode($delimiter, $string)
 
 $mystr = "salam,khoobi";
 $delimiter = ",";
-$array = myExplode($delimiter, $mystr);
+$array = myExplode($jodakonandeh, $mystr);
 
 print_r($array); 
