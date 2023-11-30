@@ -5,7 +5,7 @@ function myImplode($a, $array) {
     foreach ($array as $index => $value) {
         $result = $result . $value;
         if ($value !== $lastElement) {
-            $result = $result . $glue;
+            $result = $result . $a;
         }
     }
     return $result;
@@ -13,6 +13,6 @@ function myImplode($a, $array) {
 
 // example
 $colors = array('red', 'green', 'blue', 'yellow');
-$glue = '-';
-$result = myImplode($glue, $colors);
+$a = '-';
+$result = myImplode($a. $colors);
 echo $result;
