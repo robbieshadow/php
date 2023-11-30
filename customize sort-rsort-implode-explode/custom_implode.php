@@ -1,5 +1,5 @@
 <?php
-function myImplode($glue, $array) {
+function myImplode($a, $array) {
     $result = '';
     $lastElement = end($array);;
     foreach ($array as $index => $value) {
